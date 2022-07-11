@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+html{
+
+}
+
+body{
+    
+}
+
+h1{
+    font-family: cursive;
+    margin: 8px 8px;
+    color: #DCDCDC;
+    text-shadow: 1px 1px palevioletred;
+    font-size: 18px;
+    padding: 0 4px;
+}
+
+a{
+    color: #DCDCDC;
+    text-decoration: none;
+}
+
+.hover:hover{
+    color: white;
+}
+
+.main{
+    height: 100vh;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    background-color: #ffaf3e;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__infor{
+    display: flex;
+    min-width: 10%;
+    max-width: 25%;
+    margin-left: 20px;
+}
+
+.header-img{
+    width: 48px;
+    height: 48px;
+}
+
+.header-name{
+    font-size: 28px;
+}
+
+.header__shipper{
+    min-width: 160px;
+}
+
+.ship-link{
+
+}
+
+.ship-link{
+    width: 48px;
+    height: 48px;
+}
+
+
+.infor{
+    display: flex;
+    width: 23%;
+    position: absolute;
+    z-index: 1;
+}
+
+.profile{
+    border-radius: 0px 5px 5px 0;
+    position: fixed;
+    min-width: 170px;
+    background-color: #f22726;
+    min-height: 200px;
+    box-shadow: 1px 1px #ccc;
+    margin-top: 70px;
+}
+
+.icon-logo{
+    color: #DCDCDC;
+    font-size: 20px;
+    text-shadow: 1px 1px #ccc;
+}
+
+.profile-name{
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-home{
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-socials{
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-socials-item{
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+}
+
+
+/* QR */
+.header__qr {
+    width: 170px;
+    position: absolute;
+    background-color: rgba(250, 123, 123, 0.651);
+    padding: 4px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+    left: 170px;
+    top: 0;
+    z-index: 999999999;
+}
+
+.header__qr::before {
+    position: absolute;
+    left: -50px;
+    bottom: 5px;
+    width: 100%;
+    height: 40px;
+    content: "";
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+}
+
+.header__qr-apps {
+}
+
+/* :nth-child(số) : ám chỉ thành phần con theo số bên trong hàm */
+.header__qr-link:nth-child(1) {
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(2) {
+    margin-right: 11px;
+}
+
+.header__qr-download-img {
+    height: 14px;
+}
+
+.qr-text{
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.phone-qr{
+
+}
+
+.phone-qr:hover .header__qr{
+    display: block;
+    cursor: pointer;
+}
+
+.menu__body-all{
+    position: relative;
+}
+
+.menu__body{
+    position: absolute;
+    width: 77%;
+    right: 0;
+    z-index: 0;
+}
+
+.menu__body-sub{
+    width: 100%;
+}
+
+.menu__body-main{
+    margin-top: 8px;
+    width: 99%;
+    height: 65vh;
+    border: 2px solid #ccc;
+}
+
+.btn{
+    min-width: 135px;
+    padding: 8px;
+    margin-top: 4px;
+}
